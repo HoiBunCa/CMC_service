@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.tima.ai.callCmc'
-version = '0.0.1-SNAPSHOT'
+version = '1.0.0'
 sourceCompatibility = '1.8'
 
 configurations {
@@ -24,6 +24,9 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'io.swagger:swagger-annotations:1.5.0'
+	runtimeOnly 'org.postgresql:postgresql'
 }
 
 tasks.named('test') {
